@@ -12,6 +12,6 @@ docker push archisdi/multi-worker:$SHA
 
 kubectl apply -f ./kubernetes/complexk8/k8s
 
-kubectl set image deployment/multi-client-deployment client=archisdi/multi-client:$SHA
-kubectl set image deployment/multi-server-deployment server=archisdi/multi-server:$SHA
-kubectl set image deployment/multi-worker-deployment worker=archisdi/multi-worker:$SHA
+kubectl set image deployment/client client=archisdi/multi-client:$SHA
+kubectl set image deployment/server-deployment server=archisdi/multi-server:$SHA
+kubectl set image deployment/worker-deployment worker=archisdi/multi-worker:$SHA
