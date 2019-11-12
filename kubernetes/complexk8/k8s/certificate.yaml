@@ -4,8 +4,6 @@ metadata:
   name: fib-com-tls
 spec:
   secretName: fib-com
-  duration: 2160h # 90d
-  renewBefore: 360h # 15d
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
